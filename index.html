@@ -11,7 +11,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
-  
+  <script src="./Vendors/jquery-3.6.1.min.js"></script>
+  <script src="./index.js" async></script>
   <title>CSS Challenge | Interactive comments section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -25,29 +26,53 @@
   <div class="messages">
     <!-- Comment #1 -->
     <message>
-      12
-      <div class="user-post-info">
-        <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-        <username>amyrobson</username>
-        <date id="postDate">1 month ago</date>
-      </div>
-      <div>
-        Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+      <container class="counter">
+        <button id="is-helpful">+</button>
+        <span id="helpful-counter">12</span>
+        <button id="is-not-help">-</button>
+      </container>
+      <div class="users-message-container">
+        <div >
+          <container class="user-post-info">
+            <img src="./images/avatars/image-amyrobson.png" alt="profile" />
+            <username>amyrobson</username>
+            <date id="postDate">1 month ago</date>
+            <button id="reply-btn"><svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg> Reply</button>
+          </container>
+        </div>
+        <div id="message-contained">
+          <p>
+            Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+          </p>
+        </div>
       </div>
     </message>
       <!-- Comment #2 -->
-      
+      <hr>
     <message>
-      5
-      <div>
-        <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-        maxblagun
-        <date>2 weeks ago</date>
+      <container class="counter">
+        <button id="is-helpful">+</button>
+        <span id="helpful-counter">5</span>
+        <button id="is-not-help">-</button>
+      </container>
+      <div class="users-message-container">
+        <div>
+          <container class="user-post-info">
+            <img src="./images/avatars/image-maxblagun.png" alt="profile" />
+            <username>maxblagun</username>
+            <date>2 weeks ago</date>
+            <button id="reply-btn"><svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg> Reply</button>
+          </container>
+        </div>
+        <div id="messape-container">
+          <p>
+            Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
+          </p>
+        </div>
       </div>
-      Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
     </message>
       <!-- Comment #3 (Reply to comment #2) -->
-    
+<!--     
     <message>
       4
       <div>
@@ -56,16 +81,16 @@
         <div id="postDate">1 week ago</div>
       </div>
       <p><userReference>@maxblagun</userReference> If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.</p>
-    </message>
+    </message> -->
     <!-- Comment #4 (Reply to comment #2) -->
     
-    <message>
+    <!-- <message>
       2
       <img src="./images/avatars/image-juliusomo.png" alt="profile" />
       juliusomo 
       <date id="postDate">2 days ago</date>
       <p><userReference>@ramsesmiron</userReference> I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.</p>
-    </message>
+    </message> -->
   </div>
   
   <div class="attribution">

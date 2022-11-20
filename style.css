@@ -15,35 +15,96 @@
     --White: hsl(0, 0%, 100%);
 
 }
-* {
-    background-color: var(--veryLightGray);
-}
 
-body {
+* {
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
 }
+body {
+    
+    background-color: var(--veryLightGray);
+    max-width: 800px;
+    margin: auto;
+}
 
 div.messages {
-    padding: 50px;
-    margin: 20px;
+    margin-left: 10vw;
+    margin-right: 10vw;
     background-color: var(--veryLightGray);
 }
 div.messages message {
     display: flex;
-    padding: 50px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     background-color: var(--White);
-    border-radius: 2rem;
+    border-radius: .5rem;
     max-width: 600px;
 }
-
-div.messages img {
-    background-color: var(--white);
-    object-fit: contain;
+.users-message-container {
+    margin-left: 20px;
 }
 
-div.user-post-info {
+div.messages img{
+    background-color: var(--White);
+    margin-right: 10px;
+}
+
+div.messages username {
+    background-color: transparent;
+    font-size: small;
+    margin-right: 5px;
+    height: 30px;
+    padding: 7px
+}
+
+div.messages date {
+    background-color: transparent;
+    font-size: small;
+    color: var(--grayishBlue);
+    padding: 7px
+}
+
+.user-post-info {
+    font-size: x-small;
+    height: 25px;
+    background-color: var(--White);
     display: flex;
-    width: 400px;
+}
+
+.user-post-info button {
+    margin-left: auto;
+    border: none;
+    background: none;
+    font-size: 12px;
+    font-weight: 560;
+    color: var(--darkBlue);
+    vertical-align: middle;
+}
+
+container.counter {
+    width: 50px;
+    display: inline;
+    background-color: var(--lightGray);
+    text-align: center;
+    border-radius: .35rem;
+    height: fit-content;
+    color: var(--moderateBlue);
+}
+.counter span {
+    background-color: transparent;
+    font-size: small;
+}
+container.counter button {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+p {
+    font-size: small;
+    color: var(--grayishBlue);
+    background-color: var(--White);
+    
 }
