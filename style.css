@@ -21,13 +21,13 @@
     font-family: 'Nunito', sans-serif;
 }
 body {
-    
+    width: 800px;
     background-color: var(--veryLightGray);
-    max-width: 800px;
     margin: auto;
 }
 
 div.messages {
+    width: 800px;
     margin-left: 10vw;
     margin-right: 10vw;
     background-color: var(--veryLightGray);
@@ -40,16 +40,21 @@ div.messages message {
     border-radius: .5rem;
     max-width: 600px;
 }
+
+message {
+    height: auto;
+}
+
 .users-message-container {
     margin-left: 20px;
 }
 
-div.messages img{
+message img{
     background-color: var(--White);
     margin-right: 10px;
 }
 
-div.messages username {
+message username {
     background-color: transparent;
     font-size: small;
     margin-right: 5px;
@@ -57,7 +62,7 @@ div.messages username {
     padding: 7px
 }
 
-div.messages date {
+message date {
     background-color: transparent;
     font-size: small;
     color: var(--grayishBlue);
@@ -106,5 +111,20 @@ p {
     font-size: small;
     color: var(--grayishBlue);
     background-color: var(--White);
-    
 }
+
+message {
+    height: 90px;
+}
+
+input.users-reply{
+    border-radius: .75rem;
+    border-color: var(--lightGrayishBlue);
+    height: 80px;
+    width: 490px;
+    text-align: left;
+    vertical-align: text-top;
+}
+
+
+

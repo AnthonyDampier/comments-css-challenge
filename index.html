@@ -25,28 +25,30 @@
 <body>
   <div class="messages">
     <!-- Comment #1 -->
-    <message>
-      <container class="counter">
-        <button id="is-helpful">+</button>
-        <span id="helpful-counter">12</span>
-        <button id="is-not-help">-</button>
-      </container>
-      <div class="users-message-container">
-        <div >
-          <container class="user-post-info">
-            <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-            <username>amyrobson</username>
-            <date id="postDate">1 month ago</date>
-            <button id="reply-btn"><svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg> Reply</button>
-          </container>
+    <thread>
+      <message id="message1">
+        <container class="counter">
+          <button id="is-helpful">+</button>
+          <span id="helpful-counter">12</span>
+          <button id="is-not-help">-</button>
+        </container>
+        <div class="users-message-container">
+          <div >
+            <container class="user-post-info">
+              <img src="./images/avatars/image-amyrobson.png" alt="profile" />
+              <username>amyrobson</username>
+              <date id="postDate">1 month ago</date>
+              <button id="reply-btn"><svg width="14" height="13" xmlns="http://www.w3.org/2000/svg"><path d="M.227 4.316 5.04.16a.657.657 0 0 1 1.085.497v2.189c4.392.05 7.875.93 7.875 5.093 0 1.68-1.082 3.344-2.279 4.214-.373.272-.905-.07-.767-.51 1.24-3.964-.588-5.017-4.829-5.078v2.404c0 .566-.664.86-1.085.496L.227 5.31a.657.657 0 0 1 0-.993Z" fill="#5357B6"/></svg> Reply</button>
+            </container>
+          </div>
+          <div id="message-contained">
+            <p>
+              Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+            </p>
+          </div>
         </div>
-        <div id="message-contained">
-          <p>
-            Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
-          </p>
-        </div>
-      </div>
-    </message>
+      </message>
+    </thread>
       <!-- Comment #2 -->
       <hr>
     <message>

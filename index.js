@@ -12,6 +12,15 @@ function onReady(){
 function replyClick(){
     console.log('reply clicked');
     // create and append a reply box to message above
+    $(this).parent().parent().parent().parent().parent().append(`
+        <message class="reply">
+            <container class="user-post-info" class="reply">
+                <img src="images/avatars/image-juliusomo.png" alt="profile"/>
+                <input class="users-reply" type="text"/>
+                <button>REPLY</button>
+            </container>
+        </message>
+    `);
 }
 
 function helpfulCounter(){
