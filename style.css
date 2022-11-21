@@ -76,7 +76,7 @@ message date {
     display: flex;
 }
 
-.user-post-info button {
+.user-post-info button#reply-btn {
     margin-left: auto;
     border: none;
     background: none;
@@ -115,15 +115,30 @@ p {
 
 message.reply {
     height: 90px;
+    padding: 25px;
 }
 
 input.users-reply{
     border-radius: .75rem;
     border-color: var(--lightGrayishBlue);
+    border-width: 1.75px;
     height: 80px;
     width: 490px;
     text-align: left;
     vertical-align: text-top;
+}
+
+button#send {
+    margin-left: 5px;
+    width: 60px;
+    border-color: transparent;
+    border-radius: .3rem;
+    background-color: var(--moderateBlue);
+    text-align: center;
+    vertical-align: middle;
+    font-size: xx-small;
+    font-weight: 400;
+    color: var(--White);
 }
 
 

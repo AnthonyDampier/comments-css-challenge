@@ -17,7 +17,7 @@ function replyClick(){
             <container class="user-post-info" class="reply">
                 <img src="images/avatars/image-juliusomo.png" alt="profile"/>
                 <input class="users-reply" type="text"/>
-                <button>REPLY</button>
+                <button id="send">REPLY</button>
             </container>
         </message>
     `);
